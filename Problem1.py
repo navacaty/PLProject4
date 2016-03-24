@@ -24,3 +24,12 @@ s_emp = (('ID', 'LAST_NAME', 'FIRST_NAME', 'USERID', 'START_DATE', 'COMMENTS', '
 (7, 'HAWKINS', 'ROBERTA', 'HAWKINRT', '14-MAY-90', '', 'WAREHOUSE MANAGER', 1650, 0, 42, 2),
 (8, 'BURNS', 'BEN', 'BURNSBA', '7-APR-90', '', 'WAREHOUSE MANAGER', 1500, 0, 43, 2),
 (9, 'CATSKILL', 'ANTOINETTE', 'CATSKIAW', '9-FEB-92', '', 'WAREHOUSE MANAGER', 1700, 0, 44, 2))
+
+dept = (('DEPTNO', 'DNAME', 'LOC'),
+        (10, 'ACCOUNTING', 'NEW YORK'),
+        (20, 'RESEARCH', 'DALLAS'), (30, 'SALES', 'CHICAGO'),
+        (40, 'OPERATIONS', 'BOSTON'))
+#select * from s_dept
+print (s_emp[0::])
+#select last_name, first_name, title, salary from s_emp;
+print("\nselect last_name, first_name, title, salary from s_emp:",[[i[1], i[2],i[6],i[7]] for i in s_emp[1::]])
